@@ -1,0 +1,152 @@
+body {
+	color: #555;
+	font-family: 'Hind Siliguri', sans-serif;
+}
+
+a {
+	color: #555;
+	text-decoration: none;
+}
+
+.header {
+	box-shadow: 0 2px 1px #DDD;
+	background-color: white;
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+}
+
+.logo {
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: 900;
+	margin: 1rem; /* margin set to 0 after scrolling down (sticky-nav) */
+	padding: 1rem;
+	transition: color 0.75s;
+}
+
+.logo:hover, .logo:active, .logo:focus {
+	color: red;
+	transition: color 0.25s;
+}
+
+.header-nav {
+	margin: 1rem;
+}
+
+.header-nav-link {
+	text-transform: lowercase;
+	font-family: 'Raleway';
+	font-weight: 600;
+	margin: 1rem;
+	transition: color 0.75s;
+}
+
+.header-nav-link:hover, .header-nav-link:active, .header-nav-link:focus {
+	color: red;
+	border-bottom: solid red 2px;
+	transition: color 0.25s;
+}
+
+.current-page {
+	border-bottom: solid red 2px;
+}
+
+.header-spacer {
+	color: white;
+}
+
+.content {
+	width: 70%;
+	margin: auto;
+}
+
+.heading {
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: 700;
+	font-size: 2rem;
+	margin: 1rem;
+}
+
+.divider {
+	border: solid red 2px;
+	width: 1rem;
+	display: inline-block;
+	margin: 1rem;
+}
+
+.in-text-link {
+	font-weight: 600;
+	transition: color 0.75s;
+}
+
+.in-text-link:hover, .in-text-link:active, .in-text-link:focus {
+	border-bottom: solid red 2px;
+}
+
+.in-text-link:active {
+	color: red;
+	transition: color 0.25s;
+}
+
+.image-link {
+	border-bottom: solid white 4px;
+	transition: border-bottom-color 0.5s;
+}
+
+.image-link:hover {
+	border-bottom: solid red 4px;
+	transition: border-bottom-color 0.5s;
+}
+
+.footer {
+	background: #333;
+	color: white;
+	box-shadow: 0 2px 1px #222 inset;
+}
+
+.footer-section {
+	margin: 1rem;
+	padding: 1rem;
+}
+
+.footer-heading {
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: 600;
+	margin: 1rem;
+}
+
+.footer-logo {
+	font-weight: 900;
+}
+
+.footer-nav {
+	list-style-type: none;
+	font-family: 'Raleway';
+	font-weight: 600;
+	line-height: 2.5rem;
+	margin: 1rem;
+	padding: 0;
+}
+
+.footer-nav-link {
+	color: white;
+	transition: color 0.75s;
+}
+
+.footer-nav-link:hover, .footer-nav-link:active, .footer-nav-link:focus {
+	border-bottom: solid red 2px;
+}
+
+.footer-nav-link:active {
+	color: red;
+	transition: color 0.25s;
+}
+
+.social-media-icon {
+	max-width: 2rem;
+	margin: 1rem;
+}

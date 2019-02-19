@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Style Guide | MILO.</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<!-- <link href="css/main.css" rel="stylesheet"> -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- <link href="css/grids.css" rel="stylesheet"> -->
+	<link href="css/flex.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="header-container">
+			<div class="header-item">
+				<a href="index.html">
+					<h1 class="logo">Milo.</h1>	
+				</a>
+			</div>
+			<div class="header-item">
+				<nav class="header-nav">
+					<div class="nav-container">
+						<div class="nav-item">
+							<a class="header-nav-link" href="index.html">Home</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="about.html">About</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="shop.html">Shop</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="contact.html">Contact</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="">
+								<i class="material-icons">search</i>
+							</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="cart.html">
+								<i class="material-icons">shopping_cart</i>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="header-spacer">
+			<div class="header-container">
+				<div class="header-item">
+					<h1 class="logo">Milo.</h1>
+				</div>
+				<div class="header-item">
+					<nav class="header-nav">
+						<div class="nav-container">
+							<div class="nav-item">Home</div>
+							<div class="nav-item">About</div>
+							<div class="nav-item">Shop</div>
+							<div class="nav-item">Contact</div>
+							<div class="nav-item">
+								<i class="material-icons">search</i>
+							</div>
+							<div class="nav-item">
+								<i class="material-icons">shopping_cart</i>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</div>
+		</div>
+		<section class="content">
+			<h2 class="heading">Style Guide</h2>
+				<hr class="divider">
+				<nav>
+					<a href="#interactive-elements">Interactive Elements</a>
+			        <a href="#text-elements">Text Elements</a>
+			        <a href="#combined-elements">Combined Elements</a>
+			        <a href="shop.html" target="-blank">Product Listing Template</a>
+			        <a href="checkout.html" target="-blank">Checkout Template</a>
+			        <a href="citations">Citations</a>
+				</nav>
+				<section id="interactive-elements">
+					<h3>Interactive Elements</h3>
+						<h4>In-Text Link</h4>
+							<h5>Class</h5>
+								<code>.in-text-link</code>
+							<h5>Code</h5>
+								<code>
+									&lt;a class="in-text-link" href=""&gt;in-text link&lt;/a&gt;
+								</code>
+							<h5>Element</h5>
+								<p>
+									This is an <a class="in-text-link" href="">in-text link</a>.
+								</p>
+						<h4>Navigation Link</h4>
+							<h5>Class</h5>
+								<code>.header-nav-link</code>
+							<h5>Code</h5>
+								<code>
+									&lt;a class="header-nav-link" href=""&gt;Header Navigation Link&lt;/a&gt;
+								</code>
+							<h5>Element</h5>
+								<a class="header-nav-link" href="">Header Navigation Link</a>
+						<h4>Button</h4>
+							<h5>Class</h5>
+								<code>.clear-button, .enter-button</code>
+							<h5>Code</h5>
+								<code>
+									&lt;button class="clear-button"&gt;Clear&lt;/button&gt;<br>
+									&lt;button class="enter-button"&gt;Enter&lt;/button&gt;
+								</code>
+							<h5>Element</h5>
+								<button class="clear-button">Clear</button>
+								<button class="enter-button">Enter</button>
+						<h4>Label</h4>
+							<h5>Class</h5>
+								<code>.label</code>
+							<h5>Code</h5>
+								<code>
+									&lt;label class="label"&gt;Label&lt;/label&gt;
+								</code>
+							<h5>Element</h5>
+								<label class="label">Label</label>
+						<h4>Text Input Field</h4>
+							<h5>Class</h5>
+								<code>.form</code>
+							<h5>Code</h5>
+								<code>
+									&lt;input class="form" type="text" name="email" placeholder="info@milo.com"&gt;
+								</code>
+							<h5>Element</h5>
+								<label>
+									Email: <input class="form" type="text" name="email" placeholder="info@milo.com">
+								</label>
+						<h4>Radio Button</h4>
+							<h5>Class</h5>
+								<code>.radio-button</code>
+							<h5>Code</h5>
+								<code>
+									&lt;input class="radio-button" type="radio" name="payment-method"&gt;
+								</code>
+							<h5>Element</h5>
+								<h5>Payment Method:</h5>
+								<label>
+									<input class="radio-button" type="radio" name="paypal"> VISA
+								</label>
+								<label>
+									<input class="radio-button" type="radio" name="paypal"> MasterCard
+								</label>
+								<label>
+									<input class="radio-button" type="radio" name="paypal"> AMEX
+								</label>
+								<label>
+									<input class="radio-button" type="radio" name="paypal"> PayPal
+								</label>
+						<h4>Image Link</h4>
+							<h5>Class</h5>
+								<code>.image-link</code>
+							<h5>Code</h5>
+								<code>
+									&lt;img class="image-link" src="img/placeholder.jpg"&gt;
+								</code>
+							<h5>Element</h5>
+								<a href="">
+									<img class="image-link" src="img/placeholder.jpg">
+								</a>
+				</section>
+				<section id="text-elements">
+					<h3>Text Elements</h3>
+						<h4>Headings</h4>
+							<h5>Class</h5>
+								<code>.heading, .footer-heading</code>
+							<h5>Code</h5>
+								<code>
+									&lt;h2 class="heading"&gt;Heading&lt;/h2&gt;<br>
+									&lt;h4 class="footer-heading"&gt;Footer Heading&lt;/h4&gt;
+								</code>
+							<h5>Element</h5>
+								<h2 class="heading">Heading</h2>
+								<h4 class="footer-heading">Footer Heading</h4>
+						<h4>Paragraph</h4>
+							<h5>Class</h5>
+								<code>.text</code>
+							<h5>Code</h5>
+								<code>
+									&lt;p class="text"&gt;This is a paragraph.&lt;/p&gt;
+								</code>
+							<h5>Element</h5>
+								<p class="text">This is a paragraph.</p>
+						<h4>Numbered List</h4>
+							<h5>Class</h5>
+								<code>.numbered-list</code>
+							<h5>Code</h5>
+								<code>
+									&lt;ol class="numbered-list"&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Value 1&lt;/li&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Value 2&lt;/li&gt;<br>
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;Value 3&lt;/li&gt;<br>
+									&lt;/ol&gt;
+								</code>
+							<h5>Element</h5>
+								<ol class="numbered-list">
+									<li>Value 1</li>
+									<li>Value 2</li>
+									<li>Value 3</li>
+								</ol>
+				</section>
+				<section id="combined-elements">
+					<h3>Combined Elements</h3>
+						<h4>Header Navigation</h4>
+							<!-- secondary navigation, footer navigation -->
+							<h5>Class</h5>
+								<code></code>
+							<h5>Code</h5>
+								<code>
+									
+								</code>
+							<h5>Element</h5>
+								<header class="header">
+									<div class="header-container">
+										<div class="header-item">
+											<a href="index.html">
+												<h1 class="logo">Milo.</h1>	
+											</a>
+										</div>
+										<div class="header-item">
+											<nav class="header-nav">
+												<div class="nav-container">
+													<div class="nav-item">
+														<a class="header-nav-link" href="index.html">Home</a>
+													</div>
+													<div class="nav-item">
+														<a class="header-nav-link" href="about.html">About</a>
+													</div>
+													<div class="nav-item">
+														<a class="header-nav-link" href="shop.html">Shop</a>
+													</div>
+													<div class="nav-item">
+														<a class="header-nav-link" href="contact.html">Contact</a>
+													</div>
+													<div class="nav-item">
+														<a class="header-nav-link" href="">
+															<i class="material-icons">search</i>
+														</a>
+													</div>
+													<div class="nav-item">
+														<a class="header-nav-link" href="cart.html">
+															<i class="material-icons">shopping_cart</i>
+														</a>
+													</div>
+												</div>
+											</nav>
+										</div>
+									</div>
+								</header>
+						<h4>Product Listing</h4>
+							<!-- product name, image, cost, link to detailed description, etc. -->
+							<a href="chair.html" target="_blank">	
+								<figure>
+									<img src="img/placeholder.jpg">
+									<figcaption>
+										<span class="product-name">Chair</span>
+										<span class="price">$99</span>
+									</figcaption>
+								</figure>
+							</a>
+						<h4>Payment Form</h4>
+						<h4>Checkout Cart</h4>
+							<!-- with at least 2 items (product names, costs, total amount, etc.) -->
+				</section>
+				<section id="citations">
+					<h3>Citations</h3>
+				</section>
+			</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-item">
+				<section class="footer-section">
+					<h4 class="footer-heading footer-logo">Milo.</h4>
+						<hr class="divider">
+						<nav>
+							<ul class="footer-nav">
+								<li>
+									<a class="footer-nav-link" href="styleguide.html">Style Guide</a>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="styleguide.html#citations">Citations</a>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="https://github.com/midhatkazmi/IAT-339-Project-2.git" target="_blank">Github Repository</a>
+								</li>
+							</ul>
+						</nav>
+				</section>
+			</div>
+			<div class="footer-item">
+				<section class="footer-section">
+					<h4 class="footer-heading">Contact Us</h4>
+						<hr class="divider">
+						<ul class="footer-nav">
+							<li>
+								<a class="footer-nav-link" href="mailto:info@milo.com">info@milo.com</a>
+							</li>
+							<li>
+								<a class="footer-nav-link" href="tel:7787823111">778.782.3111</a>
+							</li>
+							<li>
+								<a class="footer-nav-link" href="https://goo.gl/maps/gzdJnL2RjP52" target="_blank">
+									8888 University Dr.<br>
+									Burnaby, BC V5A 1S6
+								</a>
+							</li>
+						</ul>
+				</section>
+			</div>
+			<div class="footer-item">
+				<section id="social-media" class="footer-section">
+					<h4 class="footer-heading">Stay Connected</h4>
+						<hr class="divider">
+						<br>
+						<a class="footer-nav-link" href="#social-media">
+							<img class="social-media-icon" src="img/logo-facebook.svg" alt="Facebook Page Link">
+						</a>
+						<a class="footer-nav-link" href="#social-media">
+							<img class="social-media-icon" src="img/logo-instagram.png" alt="Instagram Account Link">
+						</a>
+						<a class="footer-nav-link" href="#social-media">
+							<img class="social-media-icon" src="img/logo-twitter.svg" alt="Twitter Icon Link">
+						</a>
+				</section>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
