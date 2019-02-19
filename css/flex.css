@@ -1,0 +1,42 @@
+*, *::after, *::before {
+	box-sizing: border-box;
+}
+
+.header-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.nav-container {
+	display: flex;
+	align-items: center;
+}
+
+.footer-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: flex-start;
+	align-content: flex-start;
+	max-width: 70%;
+	margin: auto;
+}
+
+.footer-item {
+	flex: 1;
+}
+
+@media (max-width: 470px) {
+	/*enable hamburger menu*/
+}
+
+/*
+@media (max-width: #px) {
+	disable footer flex or set flex direction to column
+}
+*/
