@@ -13,9 +13,47 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
+	<header class="header fixed-header">
+		<div class="header-container">
+			<div class="header-item">
+				<a href="index.html">
+					<h1 class="logo">Milo.</h1>	
+				</a>
+			</div>
+			<div class="header-item">
+				<nav class="header-nav">
+					<div class="nav-container">
+						<div class="nav-item">
+							<a class="header-nav-link" href="index.html">Home</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="shop.html">Shop</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="about.html">About</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="contact.html">Contact</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="">
+								<i class="material-icons">search</i>
+							</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="cart.html">
+								<i class="material-icons">shopping_cart</i>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
 		<div class="header-container">
 			<div class="header-item">
 				<a href="index.html">
@@ -51,42 +89,17 @@
 				</nav>
 			</div>
 		</div>
-	</header>
-	<main>
-		<div class="header-spacer">
-			<div class="header-container">
-				<div class="header-item">
-					<h1 class="logo">Milo.</h1>
-				</div>
-				<div class="header-item">
-					<nav class="header-nav">
-						<div class="nav-container">
-							<div class="nav-item">Home</div>
-							<div class="nav-item">About</div>
-							<div class="nav-item">Shop</div>
-							<div class="nav-item">Contact</div>
-							<div class="nav-item">
-								<i class="material-icons">search</i>
-							</div>
-							<div class="nav-item">
-								<i class="material-icons">shopping_cart</i>
-							</div>
-						</div>
-					</nav>
-				</div>
-			</div>
-		</div>
-		<section class="content">
+		<section class="body">
 			<h2 class="heading">Style Guide</h2>
 				<hr class="divider">
-				<nav>
-					<a href="#interactive-elements">Interactive Elements</a>
-			        <a href="#text-elements">Text Elements</a>
-			        <a href="#combined-elements">Combined Elements</a>
-			        <a href="shop.html" target="-blank">Product Listing Template</a>
-			        <a href="checkout.html" target="-blank">Checkout Template</a>
-			        <a href="citations">Citations</a>
-				</nav>
+				<!-- <nav class="body-nav">
+					<a class="body-nav-link" href="#interactive-elements">Interactive Elements</a>
+			        <a class="body-nav-link" href="#text-elements">Text Elements</a>
+			        <a class="body-nav-link" href="#combined-elements">Combined Elements</a>
+			        <a class="body-nav-link" href="shop.html" target="-blank">Product Listing Template</a>
+			        <a class="body-nav-link" href="checkout.html" target="-blank">Checkout Template</a>
+			        <a class="body-nav-link" href="citations">Citations</a>
+				</nav> -->
 				<section id="interactive-elements">
 					<h3>Interactive Elements</h3>
 						<h4>In-Text Link</h4>
@@ -262,13 +275,23 @@
 									</div>
 								</header>
 						<h4>Product Listing</h4>
-							<!-- product name, image, cost, link to detailed description, etc. -->
-							<a href="chair.html" target="_blank">	
-								<figure>
-									<img src="img/placeholder.jpg">
+							<a href="chair.html" target="_blank">
+								<figure class="product">
+									<img class="image-link" src="img/chair.jpg">
 									<figcaption>
-										<span class="product-name">Chair</span>
-										<span class="price">$99</span>
+										<!-- <span class="brand">Helmes</span> -->
+										<div class="product-info-container">
+											<div class="product-info-item">
+												<div class="product-name">
+													<span class="brand">Helmes</span>
+													<br>
+													Bone Chair
+												</div>
+											</div>
+											<div class="product-info-item">
+												<div class="price">$99</div>
+											</div>
+										</div>
 									</figcaption>
 								</figure>
 							</a>
@@ -327,13 +350,13 @@
 					<h4 class="footer-heading">Stay Connected</h4>
 						<hr class="divider">
 						<br>
-						<a class="footer-nav-link" href="#social-media">
+						<a class="footer-nav-link" href="https://www.facebook.com/" target="_blank">
 							<img class="social-media-icon" src="img/logo-facebook.svg" alt="Facebook Page Link">
 						</a>
-						<a class="footer-nav-link" href="#social-media">
+						<a class="footer-nav-link" href="https://www.instagram.com/" target="_blank">
 							<img class="social-media-icon" src="img/logo-instagram.png" alt="Instagram Account Link">
 						</a>
-						<a class="footer-nav-link" href="#social-media">
+						<a class="footer-nav-link" href="https://twitter.com/" target="_blank">
 							<img class="social-media-icon" src="img/logo-twitter.svg" alt="Twitter Icon Link">
 						</a>
 				</section>
