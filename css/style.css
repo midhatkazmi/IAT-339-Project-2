@@ -10,6 +10,9 @@ a {
 
 .header {
 	box-shadow: 0 2px 1px #DDD;
+}
+
+.fixed-header {
 	background-color: white;
 	position: fixed;
 	top:0;
@@ -53,13 +56,10 @@ a {
 	border-bottom: solid red 2px;
 }
 
-.header-spacer {
-	color: white;
-}
-
-.content {
+.body {
 	width: 70%;
 	margin: auto;
+	padding: 2rem;
 }
 
 .heading {
@@ -77,6 +77,23 @@ a {
 	margin: 1rem;
 }
 
+/*.body-nav {
+	box-shadow: 0 2px 1px #DDD;
+	margin: 1rem;
+}
+
+.body-nav-link {
+	padding: 1rem;
+}
+
+.body-nav-link:hover, .body-nav-link:active, .body-nav-link:focus {
+	border-bottom: solid red 2px;
+}*/
+
+.text {
+	line-height: 1.5rem;
+}
+
 .in-text-link {
 	font-weight: 600;
 	transition: color 0.75s;
@@ -91,14 +108,47 @@ a {
 	transition: color 0.25s;
 }
 
-.image-link {
-	border-bottom: solid white 4px;
-	transition: border-bottom-color 0.5s;
+/*.image-link {
+	border-bottom: solid #EEE 1px;
+	transition: opacity 0.25s;
 }
 
-.image-link:hover {
-	border-bottom: solid red 4px;
-	transition: border-bottom-color 0.5s;
+.image-link:hover, .image-link:active, .image-link:focus {
+	border-bottom: solid red 1px;
+	opacity: 0.75;
+	transition: opacity 0.25s;
+}*/
+
+.product {
+	border: solid #EEE 1px;
+	box-shadow: 1px 1px 1px #EEE;
+	display: inline-block;
+	margin: 1rem;
+}
+
+.product:hover {
+	border-bottom: solid red 1px;
+}
+
+.brand {
+	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-weight: 500;
+	font-size: 0.75rem;
+	/*margin: 1rem;*/
+}
+
+.product-name {
+	font-family: 'Raleway';
+	font-weight: 700;
+	margin: 1rem;
+}
+
+.price {
+	font-family: 'Raleway';
+	font-weight: 500;
+	text-align: right;
+	margin: 1rem;
 }
 
 .footer {
