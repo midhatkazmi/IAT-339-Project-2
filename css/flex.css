@@ -26,6 +26,11 @@
 	flex: 1;
 }*/
 
+.payment-method-container {
+	display: flex;
+	align-items: center;
+}
+
 .product-info-container {
 	display: flex;
 	align-items: flex-end;
