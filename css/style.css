@@ -10,6 +10,7 @@ a {
 
 .header {
 	box-shadow: 0 2px 1px #DDD;
+	z-index: 1;
 }
 
 .fixed-header {
@@ -107,6 +108,7 @@ a {
 
 .class {
 	margin: 1rem;
+	display: inline-block;
 }
 
 .code {
@@ -125,6 +127,7 @@ a {
 }
 
 .in-text-link {
+	font-family: 'Raleway';
 	font-weight: 600;
 	transition: color 0.75s;
 }
@@ -139,7 +142,7 @@ a {
 }
 
 .button {
-	text-transform: lowercase;
+	text-transform: uppercase;
 	border-radius: 3px;
 	margin: 1rem;
 	padding: 0.5rem;
@@ -186,15 +189,24 @@ a {
 }
 
 .label {
+	text-transform: uppercase;
 	font-family: 'Hind Siliguri';
-	font-weight: 500;
+	font-weight: 700;
+	font-size: 0.75rem;
 	margin: 1rem;
 }
 
 .form {
+	font-size: 1rem;
+	color: #555;
 	border: none;
 	border-bottom: solid #DDD 1px;
+	margin: 0.5rem 1rem;
 	padding: 0.25rem;
+}
+
+.form::placeholder {
+	color: #CCC;
 }
 
 .form:hover, .form:active {
@@ -213,16 +225,34 @@ a {
 	width: 4rem;
 }
 
-/*.image-link {
-	border-bottom: solid #EEE 1px;
-	transition: opacity 0.25s;
+.image-link-container {
+	display: inline-block;
+	overflow: hidden;
+	margin: 1rem;
 }
 
-.image-link:hover, .image-link:active, .image-link:focus {
-	border-bottom: solid red 1px;
-	opacity: 0.75;
-	transition: opacity 0.25s;
-}*/
+.image-link {
+	transition: transform 0.25s;
+}
+
+.image-link:hover, .image-link:focus {
+	transform: scale(1.15);
+	transition: transform 0.25s;
+}
+
+.image-link:active {
+	transform: scale(-1.15, 1.15);
+}
+
+.numbered-list {
+	font-family: 'Hind Siliguri';
+	margin: 1rem;
+	padding-left: 1rem;
+}
+
+.numbered-list-item {
+
+}
 
 .header-demo {
 	margin: 1rem;
@@ -271,6 +301,7 @@ a {
 
 .footer-heading {
 	text-transform: uppercase;
+	font-size: 1rem;
 	font-weight: 600;
 	margin: 1rem;
 }

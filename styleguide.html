@@ -54,7 +54,7 @@
 	<main>
 		<div class="header-container">
 			<div class="header-item">
-				<a href="index.html">
+				<a href="index.html" tabindex="-1">
 					<h1 class="logo">Milo.</h1>	
 				</a>
 			</div>
@@ -62,24 +62,24 @@
 				<nav class="header-nav">
 					<div class="nav-container">
 						<div class="nav-item">
-							<a class="header-nav-link" href="index.html">Home</a>
+							<a class="header-nav-link" href="index.html" tabindex="-1">Home</a>
 						</div>
 						<div class="nav-item">
-							<a class="header-nav-link" href="about.html">About</a>
+							<a class="header-nav-link" href="about.html" tabindex="-1">About</a>
 						</div>
 						<div class="nav-item">
-							<a class="header-nav-link" href="shop.html">Shop</a>
+							<a class="header-nav-link" href="shop.html" tabindex="-1">Shop</a>
 						</div>
 						<div class="nav-item">
-							<a class="header-nav-link" href="contact.html">Contact</a>
+							<a class="header-nav-link" href="contact.html" tabindex="-1">Contact</a>
 						</div>
 						<div class="nav-item">
-							<a class="header-nav-link" href="">
+							<a class="header-nav-link" href="" tabindex="-1">
 								<i class="material-icons">search</i>
 							</a>
 						</div>
 						<div class="nav-item">
-							<a class="header-nav-link" href="cart.html">
+							<a class="header-nav-link" href="cart.html" tabindex="-1">
 								<i class="material-icons">shopping_cart</i>
 							</a>
 						</div>
@@ -116,10 +116,10 @@
 								<code class="class">.header-nav-link</code>
 							<h5 class="subtitle">Code:</h5>
 								<code class="code">
-									&lt;a class="header-nav-link" href="index.html" target="_blank"&gt;Home&lt;/a&gt;
+									&lt;a class="header-nav-link" href="""&gt;Shop&lt;/a&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
-								<a class="header-nav-link" href="index.html" target="_blank">Home</a>
+								<a class="header-nav-link" href="">Shop</a>
 						<h4 class="title">Button</h4>
 							<h5 class="subtitle">Class:</h5>
 								<code class="class">.reset-button, .submit-button</code>
@@ -145,7 +145,9 @@
 								<code class="class">.form</code>
 							<h5 class="subtitle">Code:</h5>
 								<code class="code">
-									&lt;input class="form" type="text" name="email" placeholder="info@milo.com"&gt;
+									&lt;label class="label"&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="form" type="text" name="email" placeholder="info@milo.com"&gt;<br>
+									&lt;/label&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
 								<label class="label">
@@ -156,10 +158,11 @@
 								<code class="class">.radio-button</code>
 							<h5 class="subtitle">Code:</h5>
 								<code class="code">
-									&lt;input class="radio-button" type="radio" name="payment-method"&gt;
+									&lt;label class="label"&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;input class="radio-button" type="radio" name="payment-method"&gt;<br>
+									&lt;/label&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
-								<h5 class="subtitle">Payment Method:</h5>
 								<div class="payment-method-container">
 									<div class="payment-method-item">
 										<input id="visa" class="radio-button" type="radio" name="payment-method">
@@ -194,47 +197,41 @@
 										</label>
 									</div>
 								</div>
-								<!-- <label class="label">
-									<input class="radio-button" type="radio" name="payment-method">
-									<img class="payment-method-icon" src="img/logo-visa.png" alt="Choose Visa as your payment method">
-								</label>
-								<label class="label">
-									<input class="radio-button" type="radio" name="payment-method">
-									<img class="payment-method-icon" src="img/logo-mastercard.svg" alt="Choose Mastercard as your payment method">
-								</label>
-								<label class="label">
-									<input class="radio-button" type="radio" name="payment-method">
-									<img class="payment-method-icon" src="img/logo-amex.png" alt="Choose American Express as your payment method">
-								</label>
-								<label class="label">
-									<input class="radio-button" type="radio" name="payment-method">
-									<img class="payment-method-icon" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="Choose PayPal as your payment method">
-								</label> -->
 						<h4 class="title">Image Link</h4>
 							<h5 class="subtitle">Class:</h5>
-								<code class="class">.image-link</code>
+								<code class="class">image-link-container, .image-link</code>
 							<h5 class="subtitle">Code:</h5>
 								<code class="code">
-									&lt;img class="image-link" src="img/placeholder.jpg"&gt;
+									&lt;div class="image-link-container"&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="image-link" src="img/chair.jpg"&gt;<br>
+									&lt;/div&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
 								<a href="">
-									<img class="image-link" src="img/placeholder.jpg">
+									<div class="image-link-container">
+										<img class="image-link" src="img/chair.jpg">
+									</div>
 								</a>
 				</section>
 				<section id="text-elements">
 					<h3 class="subheading">Text Elements</h3>
 						<h4 class="title">Headings</h4>
 							<h5 class="subtitle">Class:</h5>
-								<code class="class">.heading, .footer-heading</code>
+								<code class="class">.heading, .subheading, .title, .subtitle, .footer-heading</code>
 							<h5 class="subtitle">Code:</h5>
 								<code class="code">
 									&lt;h2 class="heading"&gt;Heading&lt;/h2&gt;<br>
-									&lt;h4 class="footer-heading"&gt;Footer Heading&lt;/h4&gt;
+									&lt;h3 class="subheading"&gt;Subheading&lt;/h3&gt;<br>
+									&lt;h4 class="title"&gt;Title&lt;/h4&gt;<br>
+									&lt;h5 class="subtitle"&gt;Subtitle&lt;/h4&gt;<br>
+									&lt;h6 class="footer-heading"&gt;Footer Heading&lt;/h4&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
 								<h2 class="heading">Heading</h2>
-								<h4 class="footer-heading">Footer Heading</h4>
+								<h3 class="subheading">Subheading</h3>
+								<h4 class="title">Title</h4>
+								<h5 class="subtitle">Subtitle</h4>
+								<h6 class="footer-heading">Footer Heading</h4>
 						<h4 class="title">Paragraph</h4>
 							<h5 class="subtitle">Class:</h5>
 								<code class="class">.text</code>
@@ -257,9 +254,9 @@
 								</code>
 							<h5 class="subtitle">Element:</h5>
 								<ol class="numbered-list">
-									<li>Value 1</li>
-									<li>Value 2</li>
-									<li>Value 3</li>
+									<li class="numbered-list-item">Value 1</li>
+									<li class="numbered-list-item">Value 2</li>
+									<li class="numbered-list-item">Value 3</li>
 								</ol>
 				</section>
 				<section id="combined-elements">
@@ -267,10 +264,26 @@
 						<h4 class="title">Header Navigation</h4>
 							<!-- secondary navigation, footer navigation -->
 							<h5 class="subtitle">Class:</h5>
-								<code class="class"></code>
+								<code class="class">.header, .logo, .header-nav, .header-nav-link</code>
 							<h5 class="subtitle">Code:</h5>
 								<code class="code">
-									
+									&lt;header class="header"&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="index.html"&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1 class="logo"&gt;Milo.&lt;/h1&gt;<br>	
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;nav class="header-nav"&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="header-nav-link" href="index.html"&gt;Home&lt;/a&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="header-nav-link" href="about.html"&gt;About&lt;/a&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="header-nav-link" href="shop.html"&gt;Shop&lt;/a&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="header-nav-link" href="contact.html"&gt;Contact&lt;/a&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="header-nav-link" href=""&gt;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="material-icons"&gt;search&lt;/i&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;a class="header-nav-link" href="cart.html"&gt;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="material-icons"&gt;shopping_cart&lt;/i&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/nav&gt;<br>
+									&lt;/header&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
 								<header class="header header-demo">
@@ -311,28 +324,107 @@
 									</div>
 								</header>
 						<h4 class="title">Product Listing</h4>
-							<a href="chair.html" target="_blank">
-								<figure class="product">
-									<img class="image-link" src="img/chair.jpg">
-									<figcaption class="product-info">
-										<div class="product-info-container">
-											<div class="product-info-item">
-												<div>
-													<span class="brand">Helmes</span>
-													<br>
-													<span class="product-name">Bone Chair</span>
+							<h5 class="subtitle">Class:</h5>
+								<code class="class">.product, .image-link-container, .image-link, .product-info, .brand, .product-name, .price</code>
+							<h5 class="subtitle">Code:</h5>
+								<code class="code">
+									&lt;a href="..."&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;figure class="product"&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="image-link-container"&gt;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img class="image-link" src="..."&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;figcaption class="product-info"&gt;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;<br>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="brand"&gt;Helmes&lt;/span&gt;<br>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;br&gt;<br>
+													&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="product-name"&gt;Bone Chair&lt;/span&gt;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;<br>
+												&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div class="price"&gt;$99&lt;/div&gt;<br>
+											&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/figcaption&gt;<br>
+										&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/figure&gt;<br>
+									&lt;/a&gt;
+								</code>
+							<h5 class="subtitle">Element:</h5>
+								<a href="chair.html" target="_blank">
+									<figure class="product">
+										<div class="image-link-container">
+											<img class="image-link" src="img/chair.jpg">
+										</div>
+										<figcaption class="product-info">
+											<div class="product-info-container">
+												<div class="product-info-item">
+													<div>
+														<span class="brand">Helmes</span>
+														<br>
+														<span class="product-name">Bone Chair</span>
+													</div>
+												</div>
+												<div class="product-info-item">
+													<div class="price">$99</div>
 												</div>
 											</div>
-											<div class="product-info-item">
-												<div class="price">$99</div>
-											</div>
-										</div>
-									</figcaption>
-								</figure>
-							</a>
+										</figcaption>
+									</figure>
+								</a>
 						<h4 class="title">Payment Form</h4>
+							<h5 class="subtitle">Class:</h5>
+								<code class="class"></code>
+							<h5 class="subtitle">Code:</h5>
+								<code class="code">
+								</code>
+							<h5 class="subtitle">Element:</h5>
+								<div class="personal-info-container">
+									<div class="personal-info-item">
+										<label class="label">
+											Full Name:<br>
+											<input class="form" type="text" name="full-name" placeholder="John Doe">
+										</label>
+									</div>
+									<div class="personal-info-item">
+										<label class="label">
+											Email:<br>
+											<input class="form" type="text" name="email" placeholder="johndoe@email.com">
+										</label>
+									</div>
+								</div>
+								<div class="card-number-container">
+									<div class="card-number-item">
+										<label class="label">
+											Card Number:<br>
+											<input class="form" type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+										</label>
+									</div>
+								</div>
+								<div class="card-info-container">
+									<div class="card-info-item">
+										<label class="label">
+											Expiration Date:<br>
+											<input class="form" type="text" name="expiration-date" placeholder="MM/YY">
+										</label>
+									</div>
+									<div class="card-info-item">
+										<label class="label">
+											Security Code:<br>
+											<input class="form" type="text" name="security-code" placeholder="###">
+										</label>
+									</div>
+								</div>
+								<div class="payment-button-container">
+									<div class="payment-button-item">
+										<button class="button reset-button">Clear</button>
+									</div>
+									<div class="payment-button-item">
+										<button class="button submit-button">Pay</button>
+									</div>
+								</div>
 						<h4 class="title">Checkout Cart</h4>
 							<!-- with at least 2 items (product names, costs, total amount, etc.) -->
+							<h5 class="subtitle">Class:</h5>
+								<code class="class"></code>
+							<h5 class="subtitle">Code:</h5>
+								<code class="code">
+								</code>
+							<h5 class="subtitle">Element:</h5>
 				</section>
 				<section id="citations">
 					<h3 class="subheading">Citations</h3>
@@ -343,7 +435,7 @@
 		<div class="footer-container">
 			<div class="footer-item">
 				<section class="footer-section">
-					<h4 class="footer-heading footer-logo">Milo.</h4>
+					<h6 class="footer-heading footer-logo">Milo.</h4>
 						<hr class="divider">
 						<nav>
 							<ul class="footer-nav">
@@ -362,7 +454,7 @@
 			</div>
 			<div class="footer-item">
 				<section class="footer-section">
-					<h4 class="footer-heading">Contact Us</h4>
+					<h6 class="footer-heading">Contact Us</h4>
 						<hr class="divider">
 						<ul class="footer-nav">
 							<li>
@@ -382,7 +474,7 @@
 			</div>
 			<div class="footer-item">
 				<section id="social-media" class="footer-section">
-					<h4 class="footer-heading">Stay Connected</h4>
+					<h6 class="footer-heading">Stay Connected</h4>
 						<hr class="divider">
 						<br>
 						<a class="footer-nav-link" href="https://www.facebook.com/" target="_blank">
