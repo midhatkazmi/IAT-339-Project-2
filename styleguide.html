@@ -116,10 +116,10 @@
 								<code class="class">.header-nav-link</code>
 							<h5 class="subtitle">Code:</h5>
 								<code class="code">
-									&lt;a class="header-nav-link" href=""&gt;Header Navigation Link&lt;/a&gt;
+									&lt;a class="header-nav-link" href="index.html" target="_blank"&gt;Home&lt;/a&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
-								<a class="header-nav-link" href="">Header Navigation Link</a>
+								<a class="header-nav-link" href="index.html" target="_blank">Home</a>
 						<h4 class="title">Button</h4>
 							<h5 class="subtitle">Class:</h5>
 								<code class="class">.reset-button, .submit-button</code>
@@ -148,7 +148,7 @@
 									&lt;input class="form" type="text" name="email" placeholder="info@milo.com"&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
-								<label>
+								<label class="label">
 									Email: <input class="form" type="text" name="email" placeholder="info@milo.com">
 								</label>
 						<h4 class="title">Radio Button</h4>
@@ -160,18 +160,56 @@
 								</code>
 							<h5 class="subtitle">Element:</h5>
 								<h5 class="subtitle">Payment Method:</h5>
-								<label>
-									<input class="radio-button" type="radio" name="paypal"> VISA
+								<div class="payment-method-container">
+									<div class="payment-method-item">
+										<input id="visa" class="radio-button" type="radio" name="payment-method">
+									</div>
+									<div class="payment-method-item">
+										<label for="visa">
+											<img class="payment-method-icon" src="img/logo-visa.png" alt="Choose Visa as your payment method">
+										</label>
+									</div>
+									<div class="payment-method-item">
+										<input id="mastercard" class="radio-button" type="radio" name="payment-method">
+									</div>
+									<div class="payment-method-item">
+										<label for="mastercard">
+											<img class="payment-method-icon" src="img/logo-mastercard.svg" alt="Choose Mastercard as your payment method">
+										</label>
+									</div>
+									<div class="payment-method-item">
+										<input id="amex" class="radio-button" type="radio" name="payment-method">
+									</div>
+									<div class="payment-method-item">
+										<label for="amex">
+											<img class="payment-method-icon" src="img/logo-amex.png" alt="Choose American Express as your payment method">
+										</label>
+									</div>
+									<div class="payment-method-item">
+										<input id="paypal" class="radio-button" type="radio" name="payment-method">
+									</div>
+									<div class="payment-method-item">
+										<label for="paypal">
+											<img class="payment-method-icon" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="Choose PayPal as your payment method">
+										</label>
+									</div>
+								</div>
+								<!-- <label class="label">
+									<input class="radio-button" type="radio" name="payment-method">
+									<img class="payment-method-icon" src="img/logo-visa.png" alt="Choose Visa as your payment method">
 								</label>
-								<label>
-									<input class="radio-button" type="radio" name="paypal"> MasterCard
+								<label class="label">
+									<input class="radio-button" type="radio" name="payment-method">
+									<img class="payment-method-icon" src="img/logo-mastercard.svg" alt="Choose Mastercard as your payment method">
 								</label>
-								<label>
-									<input class="radio-button" type="radio" name="paypal"> AMEX
+								<label class="label">
+									<input class="radio-button" type="radio" name="payment-method">
+									<img class="payment-method-icon" src="img/logo-amex.png" alt="Choose American Express as your payment method">
 								</label>
-								<label>
-									<input class="radio-button" type="radio" name="paypal"> PayPal
-								</label>
+								<label class="label">
+									<input class="radio-button" type="radio" name="payment-method">
+									<img class="payment-method-icon" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="Choose PayPal as your payment method">
+								</label> -->
 						<h4 class="title">Image Link</h4>
 							<h5 class="subtitle">Class:</h5>
 								<code class="class">.image-link</code>

@@ -180,9 +180,37 @@ a {
 }
 
 .submit-button:active {
-	background-color: white;
-	color: #555;
+	background-color: #555;
+	color: white;
 	transition: background-color 0.25s, color 0.25s;
+}
+
+.label {
+	font-family: 'Hind Siliguri';
+	font-weight: 500;
+	margin: 1rem;
+}
+
+.form {
+	border: none;
+	border-bottom: solid #DDD 1px;
+	padding: 0.25rem;
+}
+
+.form:hover, .form:active {
+	border-bottom-color: red;
+}
+
+.form:focus {
+	border-bottom-color: #555;
+}
+
+.radio-button {
+	margin: 1rem;
+}
+
+.payment-method-icon {
+	width: 4rem;
 }
 
 /*.image-link {
