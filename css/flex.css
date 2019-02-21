@@ -40,6 +40,25 @@
 	flex: 1;
 }
 
+.personal-info-container {
+	display: flex;
+}
+
+.card-number-container {}
+
+.payment-button-container {
+	display: flex;
+}
+
+.card-info-container {
+	display: flex;
+}
+
+.payment-button-container {
+	display: flex;
+	justify-content: flex-end;
+}
+
 .footer-container {
 	display: flex;
 	flex-direction: row;
