@@ -345,10 +345,13 @@
 									&lt;/a&gt;
 								</code>
 							<h5 class="subtitle">Element:</h5>
-								<a href="chair.html" target="_blank">
+								<a href="">
 									<figure class="product">
 										<div class="image-link-container">
-											<img class="image-link" src="img/chair.jpg">
+											<img class="image-link" src="img/chair2.jpg">
+											<a href="">
+												<i class="material-icons">add_shopping_cart</i>
+											</a>
 										</div>
 										<figcaption class="product-info">
 											<div class="product-info-container">
@@ -373,7 +376,39 @@
 								<code class="code">
 								</code>
 							<h5 class="subtitle">Element:</h5>
-								<div class="personal-info-container">
+								<div class="payment-form-container">
+									<div class="payment-form-item">
+										<label class="label">
+											Full Name:<br>
+											<input class="form" type="text" name="full-name" placeholder="John Doe">
+										</label>
+										<label class="label">
+											Email:<br>
+											<input class="form" type="text" name="email" placeholder="johndoe@email.com">
+										</label>
+									</div>
+									<div class="payment-form-item">
+										<label class="label">
+											Card Number:<br>
+											<input class="form" type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+										</label>
+									</div>
+									<div class="payment-form-item">
+										<label class="label">
+											Expiration Date:<br>
+											<input class="form" type="text" name="expiration-date" placeholder="MM/YY">
+										</label>
+										<label class="label">
+											Security Code:<br>
+											<input class="form" type="text" name="security-code" placeholder="###">
+										</label>
+									</div>
+									<div class="payment-form-item">
+										<button class="button reset-button">Clear</button>
+										<button class="button submit-button">Pay</button>
+									</div>
+								</div>
+								<!-- <div class="personal-info-container">
 									<div class="personal-info-item">
 										<label class="label">
 											Full Name:<br>
@@ -416,7 +451,7 @@
 									<div class="payment-button-item">
 										<button class="button submit-button">Pay</button>
 									</div>
-								</div>
+								</div> -->
 						<h4 class="title">Checkout Cart</h4>
 							<!-- with at least 2 items (product names, costs, total amount, etc.) -->
 							<h5 class="subtitle">Class:</h5>
@@ -425,6 +460,66 @@
 								<code class="code">
 								</code>
 							<h5 class="subtitle">Element:</h5>
+								<table>
+									<tr>
+										<th>Item #</th>
+										<th>Product</th>
+										<th>Quantity</th>
+										<th>Unit Price</th>
+										<th>Total Price</th>
+										<th></th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td>
+											<a href="">
+												<span class="brand">Helmes</span>
+												<br>
+												<span class="product-name">Bone Chair</span>
+											</a>
+										</td>
+										<td>
+											<input class="form" type="text" name="quantity">
+										</td>
+										<td>$99.00</td>
+										<td>$99.00</td>
+										<td>
+											<a href="">
+												<i class="material-icons">remove_shopping_cart</i>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td>
+											<a href="">
+												<span class="brand">Helmes</span>
+												<br>
+												<span class="product-name">Shell Chair</span>
+											</a>
+										</td>
+										<td>
+											<input class="form" type="text" name="quantity">
+										</td>
+										<td>$199.00</td>
+										<td>$199.00</td>
+										<td>
+											<a href="">
+												<i class="material-icons">remove_shopping_cart</i>
+											</a>
+										</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td></td>
+										<th>Total Price:</th>
+										<td>$298</td>
+										<td></td>
+									</tr>
+								</table>
+								<button class="button reset-button">Clear Cart</button>
+								<button class="button submit-button">Checkout</button>
 				</section>
 				<section id="citations">
 					<h3 class="subheading">Citations</h3>

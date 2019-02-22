@@ -40,7 +40,12 @@
 	flex: 1;
 }
 
-.personal-info-container {
+.payment-form-container {
+	display: flex;
+	flex-direction: column;
+}
+
+/*.personal-info-container {
 	display: flex;
 }
 
@@ -57,7 +62,7 @@
 .payment-button-container {
 	display: flex;
 	justify-content: flex-end;
-}
+}*/
 
 .footer-container {
 	display: flex;
