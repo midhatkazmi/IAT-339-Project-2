@@ -146,20 +146,19 @@ a {
 	border-radius: 3px;
 	margin: 1rem;
 	padding: 0.5rem;
-	width: 10rem;
 }
 
 .reset-button {
 	font-weight: 500;
-	background: white;
+	background-color: white;
 	color: #CCC;
 	border: solid #EEE 1px;
 	transition: color 0.25s, border 0.25s;
 }
 
 .reset-button:hover, .reset-button:focus {
-	color: #AAA;
-	border-color: #BBB;
+	color: #555;
+	border-color: #555;
 	transition: color 0.25s, border 0.25s, background-color 0.25s;
 }
 
@@ -170,15 +169,15 @@ a {
 
 .submit-button {
 	font-weight: 700;
-	background: #EEE;
-	color: #555;
+	background-color: red;
+	color: white;
 	border: none;
 	transition: background-color 0.25s, color 0.25s;
 }
 
 .submit-button:hover, .submit-button:focus {
-	background-color: red;
-	color: white;
+	background-color: #EEE;
+	color: #555;
 	transition: background-color 0.25s, color 0.25s;
 }
 
@@ -228,7 +227,15 @@ a {
 .image-link-container {
 	display: inline-block;
 	overflow: hidden;
-	margin: 1rem;
+	/*margin: 1rem;*/
+	position: relative;
+}
+
+.image-link-container .material-icons {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 2rem;
 }
 
 .image-link {
@@ -267,6 +274,10 @@ a {
 
 .product:hover {
 	border-bottom: solid red 1px;
+}
+
+.product:hover .image-link {
+	transform: scale(2);
 }
 
 .product-info {
