@@ -354,18 +354,10 @@
 											</a>
 										</div>
 										<figcaption class="product-info">
-											<div class="product-info-container">
-												<div class="product-info-item">
-													<div>
-														<span class="brand">Helmes</span>
-														<br>
-														<span class="product-name">Bone Chair</span>
-													</div>
-												</div>
-												<div class="product-info-item">
-													<div class="price">$99</div>
-												</div>
-											</div>
+											<span class="brand">Helmes</span>
+											<br>
+											<span class="product-name">Bone Chair</span>
+											<span class="price">$99</span>
 										</figcaption>
 									</figure>
 								</a>
@@ -378,14 +370,20 @@
 							<h5 class="subtitle">Element:</h5>
 								<div class="payment-form-container">
 									<div class="payment-form-item">
-										<label class="label">
-											Full Name:<br>
-											<input class="form" type="text" name="full-name" placeholder="John Doe">
-										</label>
-										<label class="label">
-											Email:<br>
-											<input class="form" type="text" name="email" placeholder="johndoe@email.com">
-										</label>
+										<div class="payment-info-container">
+											<div class="payment-info-item">
+												<label class="label">
+													Full Name:<br>
+													<input class="form" type="text" name="full-name" placeholder="John Doe">
+												</label>
+											</div>
+											<div class="payment-info-item">
+												<label class="label">
+													Email:<br>
+													<input class="form" type="text" name="email" placeholder="johndoe@email.com">
+												</label>
+											</div>
+										</div>
 									</div>
 									<div class="payment-form-item">
 										<label class="label">
@@ -394,66 +392,33 @@
 										</label>
 									</div>
 									<div class="payment-form-item">
-										<label class="label">
-											Expiration Date:<br>
-											<input class="form" type="text" name="expiration-date" placeholder="MM/YY">
-										</label>
-										<label class="label">
-											Security Code:<br>
-											<input class="form" type="text" name="security-code" placeholder="###">
-										</label>
+										<div class="payment-info-container">
+											<div class="payment-info-item">
+												<label class="label">
+													Expiration Date:<br>
+													<input class="form" type="text" name="expiration-date" placeholder="MM/YY">
+												</label>
+											</div>
+											<div class="payment-info-item">
+												<label class="label">
+													Security Code:<br>
+													<input class="form" type="text" name="security-code" placeholder="###">
+												</label>
+											</div>
+										</div>
 									</div>
 									<div class="payment-form-item">
-										<button class="button reset-button">Clear</button>
-										<button class="button submit-button">Pay</button>
+										<div class="payment-info-container">
+											<div class="payment-info-item">
+												<button class="button reset-button">Clear</button>
+											</div>
+											<div class="payment-info-item">
+												<button class="button submit-button">Pay</button>
+											</div>
+										</div>
 									</div>
 								</div>
-								<!-- <div class="personal-info-container">
-									<div class="personal-info-item">
-										<label class="label">
-											Full Name:<br>
-											<input class="form" type="text" name="full-name" placeholder="John Doe">
-										</label>
-									</div>
-									<div class="personal-info-item">
-										<label class="label">
-											Email:<br>
-											<input class="form" type="text" name="email" placeholder="johndoe@email.com">
-										</label>
-									</div>
-								</div>
-								<div class="card-number-container">
-									<div class="card-number-item">
-										<label class="label">
-											Card Number:<br>
-											<input class="form" type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
-										</label>
-									</div>
-								</div>
-								<div class="card-info-container">
-									<div class="card-info-item">
-										<label class="label">
-											Expiration Date:<br>
-											<input class="form" type="text" name="expiration-date" placeholder="MM/YY">
-										</label>
-									</div>
-									<div class="card-info-item">
-										<label class="label">
-											Security Code:<br>
-											<input class="form" type="text" name="security-code" placeholder="###">
-										</label>
-									</div>
-								</div>
-								<div class="payment-button-container">
-									<div class="payment-button-item">
-										<button class="button reset-button">Clear</button>
-									</div>
-									<div class="payment-button-item">
-										<button class="button submit-button">Pay</button>
-									</div>
-								</div> -->
 						<h4 class="title">Checkout Cart</h4>
-							<!-- with at least 2 items (product names, costs, total amount, etc.) -->
 							<h5 class="subtitle">Class:</h5>
 								<code class="class"></code>
 							<h5 class="subtitle">Code:</h5>
@@ -461,62 +426,63 @@
 								</code>
 							<h5 class="subtitle">Element:</h5>
 								<table>
-									<tr>
-										<th>Item #</th>
-										<th>Product</th>
-										<th>Quantity</th>
-										<th>Unit Price</th>
-										<th>Total Price</th>
-										<th></th>
-									</tr>
-									<tr>
-										<td>1</td>
-										<td>
-											<a href="">
-												<span class="brand">Helmes</span>
-												<br>
-												<span class="product-name">Bone Chair</span>
-											</a>
-										</td>
-										<td>
-											<input class="form" type="text" name="quantity" value="1">
-										</td>
-										<td>$99.00</td>
-										<td>$99.00</td>
-										<td>
-											<a href="">
-												<i class="material-icons">remove_shopping_cart</i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td>2</td>
-										<td>
-											<a href="">
-												<span class="brand">Helmes</span>
-												<br>
-												<span class="product-name">Shell Chair</span>
-											</a>
-										</td>
-										<td>
-											<input class="form" type="text" name="quantity" value="1">
-										</td>
-										<td>$199.00</td>
-										<td>$199.00</td>
-										<td>
-											<a href="">
-												<i class="material-icons">remove_shopping_cart</i>
-											</a>
-										</td>
-									</tr>
-									<tr>
-										<td></td>
-										<td></td>
-										<td></td>
-										<th>Total Price:</th>
-										<td>$298</td>
-										<td></td>
-									</tr>
+									<thead>
+										<tr>
+											<th>Item No.</th>
+											<th class="product-heading">Product</th>
+											<th>Qty.</th>
+											<th>Unit Price</th>
+											<th>Total Price</th>
+											<th></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>1</td>
+											<td class="brand-and-product-name">
+												<a class="in-text-link" href="">
+													<span class="brand">Helmes</span>
+													- Bone Chair
+												</a>
+											</td>
+											<td>
+												<input class="form" type="text" name="quantity" value="1">
+											</td>
+											<td>$99.00</td>
+											<td>$99.00</td>
+											<td>
+												<a href="">
+													<i class="material-icons remove-from-cart-button">remove_shopping_cart</i>
+												</a>
+											</td>
+										</tr>
+										<tr>
+											<td>2</td>
+											<td class="brand-and-product-name">
+												<a class="in-text-link" href="">
+													<span class="brand">Malm</span>
+													- Shell Chair
+												</a>
+											</td>
+											<td>
+												<input class="form" type="text" name="quantity" value="1">
+											</td>
+											<td>$199.00</td>
+											<td>$199.00</td>
+											<td>
+												<a href="">
+													<i class="material-icons remove-from-cart-button">remove_shopping_cart</i>
+												</a>
+											</td>
+										</tr>
+									</tbody>
+									<tfoot>
+										<tr>
+											<td colspan="3"></td>
+											<th>Total Price:</th>
+											<td>$298.00</td>
+										</tr>
+									</tfoot>
 								</table>
 								<button class="button reset-button">Clear Cart</button>
 								<button class="button submit-button">Checkout</button>

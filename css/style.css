@@ -193,6 +193,7 @@ a {
 	font-weight: 700;
 	font-size: 0.75rem;
 	margin: 1rem;
+	display: block;
 }
 
 .form {
@@ -200,8 +201,9 @@ a {
 	color: #555;
 	border: none;
 	border-bottom: solid #DDD 1px;
-	margin: 0.5rem 1rem;
+	margin: 0.5rem 0;
 	padding: 0.25rem;
+	width: 100%;
 }
 
 .form::placeholder {
@@ -306,6 +308,7 @@ a {
 
 .product-info {
 	margin: 1rem;
+	position: relative;
 }
 
 .brand {
@@ -320,7 +323,79 @@ a {
 
 .price {
 	font-weight: 500;
-	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+table {
+	text-align: center;
+	margin: 1rem;
+	border-collapse: collapse;
+}
+
+table .form {
+	text-align: center;
+}
+
+thead th {
+	background-color: #DDD;
+}
+
+.product-heading {
+	text-align: left;
+}
+
+tbody tr {
+	font-weight: 500;
+}
+
+.brand-and-product-name {
+	text-align: left;
+	font-weight: 500;
+}
+
+.brand-and-product-name .in-text-link {
+	font-weight: 500;
+}
+
+.brand-and-product-name .brand {
+	font-size: 1rem;
+}
+
+tbody tr:hover, tbody tr:focus, tbody tr:active {
+	background-color: #EEE;
+}
+
+tbody td {
+	border-bottom: solid 1px #EEE;
+}
+
+tfoot td {
+	font-weight: 600;
+}
+
+th {
+	text-transform: lowercase;
+	font-weight: 600;
+}
+
+th, td {
+	padding: 1rem;
+}
+
+.remove-from-cart-button {
+	color: #CCC;
+	transition: color 0.25s;
+}
+
+.remove-from-cart-button:hover, .remove-from-cart-button:focus {
+	color: red;
+	transition: color 0.25s;
+}
+
+.remove-from-cart-button:active {
+	color: #555;
 }
 
 .footer {
