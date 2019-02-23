@@ -31,38 +31,18 @@
 	align-items: center;
 }
 
-.product-info-container {
-	display: flex;
-	align-items: flex-end;
-}
-
-.product-info-item {
-	flex: 1;
-}
-
 .payment-form-container {
 	display: flex;
 	flex-direction: column;
 }
 
-/*.personal-info-container {
+.payment-info-container {
 	display: flex;
 }
 
-.card-number-container {}
-
-.payment-button-container {
-	display: flex;
+.payment-info-item {
+	flex: 1;
 }
-
-.card-info-container {
-	display: flex;
-}
-
-.payment-button-container {
-	display: flex;
-	justify-content: flex-end;
-}*/
 
 .footer-container {
 	display: flex;
