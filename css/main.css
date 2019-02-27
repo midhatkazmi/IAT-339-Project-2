@@ -106,7 +106,7 @@ a.current-page {
 	flex-basis: 50rem;
 }
 
-@media(max-width: 780px){
+@media(max-width: 850px){
 	.box{
 		max-width: 25rem;
 		margin: 0 1.8rem;
@@ -207,7 +207,8 @@ input[type='email']:focus, input[type='email']:hover{
 	transition: border-bottom 0.5s;
 }
 
-@media(max-width: 780px){
+/*before media is 780px*/
+@media(max-width: 850px){
 	.input{
 	width: 250px;
 	margin: 2 0rem;
@@ -260,6 +261,12 @@ input[type='email']:focus, input[type='email']:hover{
 	text-align: center;
 }
 
+@media(max-width: 550px){
+	.opt{
+		padding: 0.5em 1em;
+	}
+}
+
 .opt-title{
 	font: 1rem;
 }
@@ -277,6 +284,8 @@ select{
 }
 
 /*product list*/
+
+
 .product-section{
 	display: flex;
 	justify-content: center;
@@ -318,12 +327,21 @@ select{
 	border-bottom-style: solid;
 }
 
-@media(max-width: 780px){
+@media(max-width: 850px){
 	.item{
 		flex: 1 45%;
 	}
 	.item > figure{
-		margin: 0.3em 0.8em;
+		margin: 0.3em 1.2em;
+	}
+}
+
+@media(max-width: 650px){
+	.item{
+		flex: 1 55%;
+	}
+	.item > figure{
+		margin: 0.8em 4em;
 	}
 }
 
