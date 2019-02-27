@@ -146,6 +146,7 @@ a {
 	border-radius: 3px;
 	margin: 1rem;
 	padding: 0.5rem;
+	width: 10rem;
 }
 
 .reset-button {
@@ -203,7 +204,7 @@ a {
 	border-bottom: solid #DDD 1px;
 	margin: 0.5rem 0;
 	padding: 0.25rem;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .form::placeholder {
@@ -266,17 +267,13 @@ a {
 }
 
 .image-link:active {
-	transform: scale(-1.15, 1.15);
+	transform: scale(1.6);
 }
 
 .numbered-list {
 	font-family: 'Hind Siliguri';
 	margin: 1rem;
 	padding-left: 1rem;
-}
-
-.numbered-list-item {
-
 }
 
 .header-demo {
@@ -299,7 +296,7 @@ a {
 }
 
 .product:active .image-link {
-	transform: scale(1.6, 1.6);
+	transform: scale(1.6);
 }
 
 .product .image-link-container {
@@ -326,6 +323,10 @@ a {
 	position: absolute;
 	bottom: 0;
 	right: 0;
+}
+
+.payment-form-item .form {
+	width: 100%;
 }
 
 table {
