@@ -55,6 +55,27 @@ a {
 	border-bottom: solid red 2px;
 }
 
+.index-button .material-icons {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	font-size: 2rem;
+	border-radius: 100%;
+	background-color: white;
+	padding: 0.5rem;
+	transition: background-color 0.25s, color 0.25s;
+}
+
+.index-button .material-icons:hover, .index-button .material-icons:focus {
+	background-color: red;
+	color: white;
+	transition: background-color 0.25s, color 0.25s;
+}
+
+.index-button .material-icons:active {
+	background: #555;
+}
+
 .body {
 	width: 70%;
 	margin: auto;
@@ -329,17 +350,17 @@ a {
 	width: 100%;
 }
 
-table {
+.table {
 	text-align: center;
 	margin: 1rem;
 	border-collapse: collapse;
 }
 
-table .form {
+.table .form {
 	text-align: center;
 }
 
-thead th {
+.table-header .table-heading {
 	background-color: #DDD;
 }
 
@@ -347,7 +368,7 @@ thead th {
 	text-align: left;
 }
 
-tbody tr {
+.table-body .table-row {
 	font-weight: 500;
 }
 
@@ -364,24 +385,24 @@ tbody tr {
 	font-size: 1rem;
 }
 
-tbody tr:hover, tbody tr:focus, tbody tr:active {
+.table-body .table-row:hover, .table-body .table-row:focus, .table-body .table-row:active {
 	background-color: #EEE;
 }
 
-tbody td {
+.table-body .table-data {
 	border-bottom: solid 1px #EEE;
 }
 
-tfoot td {
+.table-footer .table-data {
 	font-weight: 600;
 }
 
-th {
+.table-heading {
 	text-transform: lowercase;
 	font-weight: 600;
 }
 
-th, td {
+.table-heading, .table-data {
 	padding: 1rem;
 }
 
