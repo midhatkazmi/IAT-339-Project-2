@@ -55,6 +55,28 @@ a {
 	border-bottom: solid red 2px;
 }
 
+.index-button .material-icons {
+	position: fixed;
+	bottom: 2rem;
+	right: 2rem;
+	font-size: 2rem;
+	border-radius: 100%;
+	background-color: white;
+	padding: 0.5rem;
+	transition: background-color 0.25s, color 0.25s;
+	z-index: 1;
+}
+
+.index-button .material-icons:hover, .index-button .material-icons:focus {
+	background-color: red;
+	color: white;
+	transition: background-color 0.25s, color 0.25s;
+}
+
+.index-button .material-icons:active {
+	background: #555;
+}
+
 .body {
 	width: 70%;
 	margin: auto;
@@ -143,9 +165,12 @@ a {
 
 .button {
 	text-transform: uppercase;
+	font-family: 'Raleway';
+	font-size: 1rem;
 	border-radius: 3px;
 	margin: 1rem;
 	padding: 0.5rem;
+	width: 10rem;
 }
 
 .reset-button {
@@ -203,7 +228,6 @@ a {
 	border-bottom: solid #DDD 1px;
 	margin: 0.5rem 0;
 	padding: 0.25rem;
-	width: 100%;
 }
 
 .form::placeholder {
@@ -266,17 +290,13 @@ a {
 }
 
 .image-link:active {
-	transform: scale(-1.15, 1.15);
+	transform: scale(1.6);
 }
 
 .numbered-list {
 	font-family: 'Hind Siliguri';
 	margin: 1rem;
 	padding-left: 1rem;
-}
-
-.numbered-list-item {
-
 }
 
 .header-demo {
@@ -299,7 +319,7 @@ a {
 }
 
 .product:active .image-link {
-	transform: scale(1.6, 1.6);
+	transform: scale(1.6);
 }
 
 .product .image-link-container {
@@ -328,17 +348,21 @@ a {
 	right: 0;
 }
 
-table {
+.payment-form-item .form {
+	width: 100%;
+}
+
+.table {
 	text-align: center;
 	margin: 1rem;
 	border-collapse: collapse;
 }
 
-table .form {
+.table .form {
 	text-align: center;
 }
 
-thead th {
+.table-header .table-heading {
 	background-color: #DDD;
 }
 
@@ -346,7 +370,7 @@ thead th {
 	text-align: left;
 }
 
-tbody tr {
+.table-body .table-row {
 	font-weight: 500;
 }
 
@@ -363,24 +387,24 @@ tbody tr {
 	font-size: 1rem;
 }
 
-tbody tr:hover, tbody tr:focus, tbody tr:active {
+.table-body .table-row:hover, .table-body .table-row:focus, .table-body .table-row:active {
 	background-color: #EEE;
 }
 
-tbody td {
+.table-body .table-data {
 	border-bottom: solid 1px #EEE;
 }
 
-tfoot td {
+.table-footer .table-data {
 	font-weight: 600;
 }
 
-th {
+.table-heading {
 	text-transform: lowercase;
 	font-weight: 600;
 }
 
-th, td {
+.table-heading, .table-data {
 	padding: 1rem;
 }
 
@@ -445,4 +469,86 @@ th, td {
 .social-media-icon {
 	max-width: 2rem;
 	margin: 1rem;
+}
+
+/*HOME PAGE STYLING*/
+
+.carousel {
+	overflow: hidden;
+	height: 500px;
+	position: relative;
+	text-align: center;
+}
+
+.carousel .heading {
+	font-size: 3rem;
+	color: white;
+}
+
+.carousel .divider {
+	border-color: white;
+}
+
+.carousel .button {
+	background: none;
+	border: solid white 2px;
+	transition: background 0.75s, color 0.75s, border-color 0.75s;
+}
+
+.carousel .button:hover, .carousel .button:focus {
+	background-color: red;
+	color: white;
+	border-color: red;
+	transition: background 0.25s, color 0.25s, border-color 0.25s;
+}
+
+.carousel .button:active {
+	background-color: #555;
+	border-color: #555;
+}
+
+.carousel-image {
+	width: 100%;
+}
+
+.carousel-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.centered-content {
+	text-align: center;
+	margin: 1rem;
+}
+
+.centered-content .in-text-link {
+	text-transform: lowercase;
+}
+
+/*ABOUT PAGE STYLING*/
+
+.figure {
+	margin: 1rem;
+	font-family: 'Hind Siliguri';
+}
+
+.figure-image {
+	width: 100%;
+}
+
+.figure-caption {
+	margin: 1rem 0;
+	line-height: 1.25rem;
+}
+
+.name {
+	font-weight: 600;
+}
+
+.position {
+	text-transform: uppercase;
+	font-size: 0.75rem;
+	font-weight: 500;
 }
