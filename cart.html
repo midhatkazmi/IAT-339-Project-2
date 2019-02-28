@@ -5,43 +5,45 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>MILO.</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/grids.css" rel="stylesheet">
+	<!-- <link href="css/main.css" rel="stylesheet">
+	<link href="css/grids.css" rel="stylesheet"> -->
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/flex.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
+	<header class="header fixed-header">
 		<div class="header-container">
-			<div class="header-items">
-				<h1 class="logotype">
-					<a href="index.html">Milo.</a>
-				</h1>
+			<div class="header-item">
+				<a href="index.html">
+					<h1 class="logo">Milo.</h1>	
+				</a>
 			</div>
-			<div class="header-items">
-				<nav class="nav">
+			<div class="header-item">
+				<nav class="header-nav">
 					<div class="nav-container">
-						<div class="nav-items">
-							<a href="index.html">Home</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="index.html">Home</a>
 						</div>
-						<div class="nav-items">
-							<a class="current-page" href="about.html">About</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="shop.html">Shop</a>
 						</div>
-						<div class="nav-items">
-							<a href="shop.html">Shop</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="about.html">About</a>
 						</div>
-						<div class="nav-items">
-							<a href="contact.html">Contact</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="contact.html">Contact</a>
 						</div>
-						<div class="nav-items">
-							<a href="">
+						<div class="nav-item">
+							<a class="header-nav-link" href="#">
 								<i class="material-icons">search</i>
 							</a>
 						</div>
-						<div class="nav-items">
-							<a href="cart.html">
+						<div class="nav-item">
+							<a class="header-nav-link" href="cart.html">
 								<i class="material-icons">shopping_cart</i>
 							</a>
 						</div>
@@ -51,116 +53,174 @@
 		</div>
 	</header>
 	<main>
-		<section class="section">
+		<div class="header-container">
+			<div class="header-item">
+				<a href="index.html" tabindex="-1">
+					<h1 class="logo">Milo.</h1>	
+				</a>
+			</div>
+			<div class="header-item">
+				<nav class="header-nav">
+					<div class="nav-container">
+						<div class="nav-item">
+							<a class="header-nav-link" href="index.html" tabindex="-1">Home</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="about.html" tabindex="-1">About</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="shop.html" tabindex="-1">Shop</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="contact.html" tabindex="-1">Contact</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="#" tabindex="-1">
+								<i class="material-icons">search</i>
+							</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="cart.html" tabindex="-1">
+								<i class="material-icons">shopping_cart</i>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="index-button">
+			<a href="#">
+				<i class="material-icons">arrow_upward</i>
+			</a>
+		</div>
+		<section class="body">
 			<div class="box">
 				<h3 class="subheading">SHOPS</h3>
 				<hr class="divider">	
 			</div>	
 		</section>
 		
-		<section class="section">
-			<div class="box">
-				<div class="cart-box">
-					<figure><img src="img/BoneChair.jpg" alt="Bone Chair" class="cartitemimg"></figure>
-					<figure><h3>Bone Chair</h3></figure>
-					<figure>
-						<h3>Quantity</h3>
-						<div class="quantity">
-							<input type="text" name="product1" placeholder="1" value="1">
-						</div>
-						<a href="#" class="remove">Remove</a>
-					</figure>
-					<figure>
-						<h3>Price</h3>
-						<p>$349.99</p>
-					</figure>
-				</div>
-
-				<hr>
-
-				<div class="cart-box">
-					<figure><img src="img/ShellChair.jpg" alt="Shell Chair" class="cartitemimg"></figure>
-					<figure><h3>Shell Chair</h3></figure>
-					<figure>
-						<h3>Quantity</h3>
-						<div class="quantity">
-							<input type="text" name="product1" placeholder="1" value="1">
-						</div>
-						<a href="#" class="remove">Remove</a>
-					</figure>
-					<figure>
-						<h3>Price</h3>
-						<p>$249.99</p>
-					</figure>
-				</div>
-			</div>
-		</section>
-
-		<section class="section">
-			<div class="button-cart">
-				<button class="button-shop"><a href="shop.html">Continue Shopping</a></button>
-				<button class="button-checkout"><a href="checkout.html">Checkout</a></button>
-			</div>
-		</section>
-		
+		<section class="body"> 
+			<div class="box"> 
+				<table class="table"> 
+					<thead class="table-header"> 
+						<tr> 
+							<th class="table-heading">Item No.</th> 
+							<th class="table-heading product-heading">Product</th> 
+							<th class="table-heading">Qty.</th> 
+							<th class="table-heading">Unit Price</th> 
+							<th class="table-heading">Total Price</th> 
+							<th class="table-heading"></th> 
+						</tr> 
+					</thead> 
+					<tbody class="table-body"> 
+						<tr class="table-row"> 
+							<td class="table-data">1</td> 
+							<td class="table-data brand-and-product-name"> 
+								<a class="in-text-link" href=""> 
+									<span class="brand">Helmes</span> - Bone Chair 
+								</a> 
+							</td> 
+							<td class="table-data"> 
+								<input class="form" type="text" name="quantity" value="1"> 
+							</td> 
+							<td class="table-data">$99.00</td> 
+							<td class="table-data">$99.00</td> 
+							<td class="table-data"> 
+								<a href=""> 
+									<i class="material-icons remove-from-cart-button">remove_shopping_cart</i> 
+								</a> 
+							</td> 
+						</tr> 
+						<tr class="table-row"> 
+							<td class="table-data">2</td> 
+							<td class="table-data brand-and-product-name"> 
+								<a class="in-text-link" href=""> 
+									<span class="brand">Malm</span> 
+									- Shell Chair 
+								</a> 
+							</td> 
+							<td class="table-data"> 
+								<input class="form" type="text" name="quantity" value="1"> 
+							</td> 
+							<td class="table-data">$199.00</td> 
+							<td class="table-data">$199.00</td> 
+							<td class="table-data"> 
+								<a href=""> 
+									<i class="material-icons remove-from-cart-button">remove_shopping_cart</i> 
+								</a> 
+							</td> 
+						</tr> 
+					</tbody> 
+					<tfoot class="table-footer"> 
+						<tr> 
+							<td class="table-data" colspan="3"></td> 
+							<th class="table-heading">Total Price:</th> 
+							<td class="table-data">$298.00</td> 
+						</tr> 
+					</tfoot> 
+				</table> 
+				<button class="button reset-button">Clear Cart</button> 
+				<button class="button submit-button">Checkout</button> 
+			</div> 
+		</section> 	
 	</main>
+	
 	<footer class="footer">
 		<div class="footer-container">
-			<div class="footer-items">
-				<section>
-					<h4 class="footer-logotype">Milo.</h4>
-					<hr class="divider">
-					<nav>
-						<ul class="footer-items">
+			<div class="footer-item">
+				<section class="footer-section">
+					<h6 class="footer-heading footer-logo">Milo.</h4>
+						<hr class="divider">
+						<nav>
+							<ul class="footer-nav">
+								<li>
+									<a class="footer-nav-link" href="styleguide.html">Style Guide</a>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="styleguide.html#citations">Citations</a>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="https://github.com/midhatkazmi/IAT-339-Project-2.git" target="_blank">Github Repository</a>
+								</li>
+							</ul>
+						</nav>
+				</section>
+			</div>
+			<div class="footer-item">
+				<section class="footer-section">
+					<h6 class="footer-heading">Contact Us</h4>
+						<hr class="divider">
+						<ul class="footer-nav">
 							<li>
-								<a href="index.html">Home</a>
+								<a class="footer-nav-link" href="mailto:info@milo.com">info@milo.com</a>
 							</li>
 							<li>
-								<a href="about.html">About</a>
+								<a class="footer-nav-link" href="tel:7787823111">778.782.3111</a>
 							</li>
 							<li>
-								<a href="shop.html">Shop</a>
-							</li>
-							<li>
-								<a href="contact.html">Contact</a>
+								<a class="footer-nav-link" href="https://goo.gl/maps/gzdJnL2RjP52" target="_blank">
+									8888 University Dr.<br>
+									Burnaby, BC V5A 1S6
+								</a>
 							</li>
 						</ul>
-					</nav>
 				</section>
 			</div>
-			<div class="footer-items">
-				<section>
-					<h4 class="footer-heading">Contact Us</h4>
-					<hr class="divider">
-					<ul class="footer-items">
-						<li>
-							<a href="mailto:info@milo.com">info@milo.com</a>
-						</li>
-						<li>
-							<a href="tel:7787823111">778.782.3111</a>
-						</li>
-						<li>
-							<a href="https://goo.gl/maps/KRPLXEwYt4h3" target="_blank">
-								8888 University Dr.<br>
-								Burnaby, BC V5A 1S6
-							</a>
-						</li>
-					</ul>
-				</section>
-			</div>
-			<div class="footer-items">
-				<section>
-					<h4 class="footer-heading">Stay Connected</h4>
-					<hr class="divider"><br>
-					<a href="#social-media">
-						<img class="social-media-icon" src="img/facebook.svg" alt="Facebook Icon Link">
-					</a>
-					<a href="#social-media">
-						<img class="social-media-icon" src="img/instagram.png" alt="Instagram Icon Link">
-					</a>
-					<a href="#social-media">
-						<img class="social-media-icon" src="img/twitter.svg" alt="Twitter Icon Link">
-					</a>
+			<div class="footer-item">
+				<section id="social-media" class="footer-section">
+					<h6 class="footer-heading">Stay Connected</h4>
+						<hr class="divider">
+						<br>
+						<a class="footer-nav-link" href="https://www.facebook.com/" target="_blank">
+							<img class="social-media-icon" src="img/logo-facebook.svg" alt="Facebook Page Link">
+						</a>
+						<a class="footer-nav-link" href="https://www.instagram.com/" target="_blank">
+							<img class="social-media-icon" src="img/logo-instagram.png" alt="Instagram Account Link">
+						</a>
+						<a class="footer-nav-link" href="https://twitter.com/" target="_blank">
+							<img class="social-media-icon" src="img/logo-twitter.svg" alt="Twitter Icon Link">
+						</a>
 				</section>
 			</div>
 		</div>
