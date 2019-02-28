@@ -16,6 +16,13 @@
 	align-items: center;
 }
 
+@media (max-width: 500px){
+	.header-nav-link {
+		font-size: 1.2rem;
+		margin: 0.55rem;
+	}
+}
+
 /*.body-nav-container {
 	display: flex;
 	flex-direction: row;
@@ -47,7 +54,7 @@
 .footer-container {
 	display: flex;
 	flex-direction: row;
-	flex-wrap: nowrap;
+	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: flex-start;
 	align-content: flex-start;
