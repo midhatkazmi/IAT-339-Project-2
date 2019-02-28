@@ -78,3 +78,13 @@
 		max-width: 85%;
 	}
 }*/
+
+/*HOME PAGE GRIDS*/
+
+.team-container {
+	display: flex;
+}
+
+.team-item {
+	flex: 1;
+}

@@ -106,7 +106,7 @@ a.current-page {
 	flex-basis: 50rem;
 }
 
-@media(max-width: 850px){
+@media(max-width: 780px){
 	.box{
 		max-width: 25rem;
 		margin: 0 1.8rem;
@@ -207,14 +207,10 @@ input[type='email']:focus, input[type='email']:hover{
 	transition: border-bottom 0.5s;
 }
 
-/*before media is 780px*/
-@media(max-width: 850px){
+@media(max-width: 780px){
 	.input{
 	width: 250px;
 	margin: 2 0rem;
-	}
-	.submit-email{
-		margin: 1rem;
 	}
 }
 
@@ -261,12 +257,6 @@ input[type='email']:focus, input[type='email']:hover{
 	text-align: center;
 }
 
-@media(max-width: 550px){
-	.opt{
-		padding: 0.5em 1em;
-	}
-}
-
 .opt-title{
 	font: 1rem;
 }
@@ -285,12 +275,6 @@ select{
 
 /*product list*/
 
-
-.product-section{
-	display: flex;
-	justify-content: center;
-}
-
 .product-list{
 	display: flex;
 	flex-direction: row;
@@ -298,51 +282,15 @@ select{
 	/*margin: 2 0em;*/
 }
 
-.item{
-	flex:1 25%;
-	/*flex-grow: 20em;
-	flex-basis: 15em;*/
-}
-
 .item img{
 	display: block;
-	width: 100%;
-	/*max-width: 350px;
-	height: auto;*/
+	max-width: 350px;
+	height: auto;
 }
 
 .item img:hover, .item img:active{
 	box-shadow: 5px 10px 18px coral;
 	opacity: 0.8;
-}
-
-.view_product a{
-	font-size: 0.8rem;
-	color: black;
-}
-
-.view_product a:hover, .view_product a:active, .view_product a:active{
-	border-bottom-width: 0.2px;
-	border-bottom-color: coral;
-	border-bottom-style: solid;
-}
-
-@media(max-width: 850px){
-	.item{
-		flex: 1 45%;
-	}
-	.item > figure{
-		margin: 0.3em 1.2em;
-	}
-}
-
-@media(max-width: 650px){
-	.item{
-		flex: 1 55%;
-	}
-	.item > figure{
-		margin: 0.8em 4em;
-	}
 }
 
 /*cart*/
