@@ -141,14 +141,23 @@
 		<!-- product section -->
 		<section class="product-section">
 			<div class="product-list">
+				<!-- SNACKBAR - Code for snackbar borrowed from https://www.w3schools.com/howto/howto_js_snackbar.asp-->
+		          <div id="snackbar">Successfully added to <a href="cart.html">your cart</a></div>
+		            <script>
+		                function addToCart() {
+		                    var x = document.getElementById("snackbar");
+		                    x.className = "show";
+		                    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+		                }
+		            </script>
 				<!-- item 1 -->
 				<div class="item">
 					<a href="shellchair.html">
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/oculusChair.jpg" alt="Oculus Chair">
-							<a href="shellchair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -166,8 +175,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/loungeChair.jpg" alt="Lounge Chair">
-							<a href="bonechair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -185,8 +194,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/redChair.jpg" alt="Red Chair">
-							<a href="shellchair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -204,8 +213,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/elbowChair.jpg" alt="Elbow Chair">
-							<a href="bonechair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -223,8 +232,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/diningChair.jpg" alt="Dining Chair">
-							<a href="shellchair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -242,8 +251,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/barStool.jpg">
-							<a href="bonechair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -261,8 +270,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/trayTable.jpg" alt="Tray Table">
-							<a href="shellchair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -280,8 +289,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/coffeeTable.jpg" alt="Coffee Table">
-							<a href="bonechair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -299,8 +308,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/footstool.jpg" alt="Footstool">
-							<a href="shellchair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -318,8 +327,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/colonialFootsool.jpg" alt="Colonial Footsool">
-							<a href="bonechair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -337,8 +346,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/deepBookcase.jpg" alt="Deep Bookcase">
-							<a href="shellchair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
@@ -356,8 +365,8 @@
 						<figure class="product">
 						<div class="image-link-container">
 							<img class="image-link" src="img/bookcase.jpg" alt="Bookcase">
-							<a href="bonechair.html">
-								<i class="material-icons add-to-cart-button">add_shopping_cart</i>
+							<a href="#">
+								<i class="material-icons add-to-cart-button" onclick="addToCart()">add_shopping_cart</i>
 							</a>
 						</div>
 						<figcaption class="product-info">
