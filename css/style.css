@@ -665,6 +665,13 @@ select{
 	text-transform: lowercase;
 }
 
+/*PRODUCT PAGE STYLING*/
+
+.product-image {
+	width: 100%;
+	margin: 1rem;
+}
+
 /*ABOUT PAGE STYLING*/
 
 .figure {
@@ -693,17 +700,14 @@ select{
 
 /*CHECKOUT PAGE STYLING*/
 
+.right-aligned-content {
+	text-align: right;
+}
+
 .condensed-body {
 	width: 50%;
 }
 
-<<<<<<< Updated upstream
-/*PRODUCT PAGE STYLING*/
-
-.product-image {
-	width: 100%;
-	margin: 1rem;
-=======
 /*<!-- SNACKBAR - Code for snackbar borrowed from https://www.w3schools.com/howto/howto_js_snackbar.asp-->*/
 
 #snackbar {	
@@ -728,5 +732,4 @@ select{
     visibility: visible;
     -webkit-animation: fadein 0.3s, fadeout 0.3s 2.5s;
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
->>>>>>> Stashed changes
 }
