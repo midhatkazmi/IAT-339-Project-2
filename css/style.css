@@ -163,6 +163,43 @@ a {
 	transition: color 0.25s;
 }
 
+/*filter*/
+.options{
+	display: flex;
+	flex-direction: row;
+	padding: 1em;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.opt{
+	padding: 2em;
+	text-align: center;
+}
+
+@media(max-width: 550px){
+	.opt{
+		padding: 0.5em 1em;
+	}
+}
+
+.opt-title{
+	font: 1rem;
+}
+
+.opt-box{
+	height: 2rem;
+	width: 6.5rem;
+}
+
+select{
+	padding: 0.5 2em;
+	border: none;
+	background-color: #EEE;
+	border-radius: 4px;
+}
+
 .button {
 	text-transform: uppercase;
 	font-family: 'Raleway';
@@ -248,6 +285,30 @@ a {
 
 .payment-method-icon {
 	width: 4rem;
+}
+
+/*product*/
+.product-section{
+	display: flex;
+	justify-content: center;
+}
+
+.product-list{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.item{
+	flex:1 25%;
+	margin: 0.5em 0em;
+}
+
+@media (max-width: 650px){
+	.item{
+		flex: 1 55%;
+		margin: 0em 7em;
+	}
 }
 
 .image-link-container {
