@@ -483,6 +483,10 @@ select{
 	color: #555;
 }
 
+.unordered-list {
+	line-height: 1.5rem;
+}
+
 .footer {
 	background-color: #333;
 	color: white;
@@ -616,10 +620,13 @@ select{
 
 /*CHECKOUT PAGE STYLING*/
 
-.right-aligned-content {
-	text-align: right;
-}
-
 .condensed-body {
 	width: 50%;
+}
+
+/*PRODUCT PAGE STYLING*/
+
+.product-image {
+	width: 100%;
+	margin: 1rem;
 }
