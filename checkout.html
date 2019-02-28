@@ -3,45 +3,46 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>MILO.</title>
+	<title>Style Guide | MILO.</title>
 	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">
-	<link href="css/grids.css" rel="stylesheet">
+	<!-- <link href="css/main.css" rel="stylesheet"> -->
+	<link href="css/style.css" rel="stylesheet">
+	<!-- <link href="css/grids.css" rel="stylesheet"> -->
+	<link href="css/flex.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Hind+Siliguri:300,400,500,600,700" rel="stylesheet">
 </head>
 <body>
-	<header class="header">
+	<header class="header fixed-header">
 		<div class="header-container">
-			<div class="header-items">
-				<h1 class="logotype">
-					<a href="index.html">Milo.</a>
-				</h1>
+			<div class="header-item">
+				<a href="index.html">
+					<h1 class="logo">Milo.</h1>	
+				</a>
 			</div>
-			<div class="header-items">
-				<nav class="nav">
+			<div class="header-item">
+				<nav class="header-nav">
 					<div class="nav-container">
-						<div class="nav-items">
-							<a href="index.html">Home</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="index.html">Home</a>
 						</div>
-						<div class="nav-items">
-							<a class="current-page" href="about.html">About</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="shop.html">Shop</a>
 						</div>
-						<div class="nav-items">
-							<a href="shop.html">Shop</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="about.html">About</a>
 						</div>
-						<div class="nav-items">
-							<a href="contact.html">Contact</a>
+						<div class="nav-item">
+							<a class="header-nav-link" href="contact.html">Contact</a>
 						</div>
-						<div class="nav-items">
-							<a href="">
+						<div class="nav-item">
+							<a class="header-nav-link" href="#">
 								<i class="material-icons">search</i>
 							</a>
 						</div>
-						<div class="nav-items">
-							<a href="cart.html">
+						<div class="nav-item">
+							<a class="header-nav-link" href="cart.html">
 								<i class="material-icons">shopping_cart</i>
 							</a>
 						</div>
@@ -51,118 +52,187 @@
 		</div>
 	</header>
 	<main>
-		<section class="section">
-			<div class="box">
-				<h3 class="subheading">Checkout</h3>
-				<hr class="divider">
-
-				<!-- contact info -->
-				<div class="box-payment">
-					<h4 class="heading4">Contact Info</h4>
-					<div class="form">
-						<div class="form-element">
-							<label name="form-name" class="label-checkout">Name</label>
-							<input type="text" name="name" class="input" placeholder="Name">
-							<label name="form-lastname" class="label-checkout">Last Name</label>
-							<input type="text" name="name" class="input" placeholder="Last Name">
-							<label class="label-checkout" name="newsletter-email">Email</label>
-							<input class="input" type="text" name="newsletter-email" placeholder="milo@gmail.com">
-						</div>
-					</div>
-				</div>
-
-				<!-- shipping info -->
-				<div class="box-payment">
-					<h4 class="heading4">Shipping Info</h4>
-					<div class="form">
-						<div class="form-element">
-							<label name="form-shipping" class="label-checkout">Address</label>
-							<input type="text" name="address" class="input" placeholder="Address">
-
-							<label name="form-shipping-postalcode" class="label-checkout">Postal Code</label>
-							<input type="text" name="city" class="input" placeholder="V5A 1S6">
-
-							<label name="form-shipping-city" class="label-checkout">City</label>
-							<input type="text" name="city" class="input" placeholder="Vancouver">
-
-							<label name="form-shipping-province" class="label-checkout">Province</label>
-							<input type="text" name="province" class="input" placeholder="BC">
-
-							<label name="form-shipping-Country" class="label-checkout">Country</label>
-							<input type="text" name="country" class="input" placeholder="Canada">
-						</div>
-					</div>
-				</div>
-
-				<!-- payment method -->
-				<!-- <div class="box-payment">
-					<h4 class="heading4">Payment Method</h4>
-					<div class="form">
-						<div class="form-element">
-							<label></label>
-						</div>
-					</div> -->
-				</div>
+		<div class="header-container">
+			<div class="header-item">
+				<a href="index.html" tabindex="-1">
+					<h1 class="logo">Milo.</h1>	
+				</a>
 			</div>
-		</section>
+			<div class="header-item">
+				<nav class="header-nav">
+					<div class="nav-container">
+						<div class="nav-item">
+							<a class="header-nav-link" href="index.html" tabindex="-1">Home</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="about.html" tabindex="-1">About</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="shop.html" tabindex="-1">Shop</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="contact.html" tabindex="-1">Contact</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="#" tabindex="-1">
+								<i class="material-icons">search</i>
+							</a>
+						</div>
+						<div class="nav-item">
+							<a class="header-nav-link" href="cart.html" tabindex="-1">
+								<i class="material-icons">shopping_cart</i>
+							</a>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+		<div class="index-button">
+			<a href="#">
+				<i class="material-icons">arrow_upward</i>
+			</a>
+		</div>
+		<section class="body condensed-body">
+			<h2 class="heading">Checkout</h2>
+				<hr class="divider">
+				<label class="label">
+					Payment Method:
+				</label>
+				<div class="payment-method-container">
+					<div class="payment-method-item">
+						<input id="visa" class="radio-button" type="radio" name="payment-method">
+					</div>
+					<div class="payment-method-item">
+						<label for="visa">
+							<img class="payment-method-icon" src="img/logo-visa.png" alt="Choose Visa as your payment method">
+						</label>
+					</div>
+					<div class="payment-method-item">
+						<input id="mastercard" class="radio-button" type="radio" name="payment-method">
+					</div>
+					<div class="payment-method-item">
+						<label for="mastercard">
+							<img class="payment-method-icon" src="img/logo-mastercard.svg" alt="Choose Mastercard as your payment method">
+						</label>
+					</div>
+					<div class="payment-method-item">
+						<input id="amex" class="radio-button" type="radio" name="payment-method">
+					</div>
+					<div class="payment-method-item">
+						<label for="amex">
+							<img class="payment-method-icon" src="img/logo-amex.png" alt="Choose American Express as your payment method">
+						</label>
+					</div>
+					<div class="payment-method-item">
+						<input id="paypal" class="radio-button" type="radio" name="payment-method">
+					</div>
+					<div class="payment-method-item">
+						<label for="paypal">
+							<img class="payment-method-icon" src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="Choose PayPal as your payment method">
+						</label>
+					</div>
+				</div>
+				<div class="payment-form-container">
+					<div class="payment-form-item">
+						<div class="payment-info-container">
+							<div class="payment-info-item">
+								<label class="label">
+									Full Name:<br>
+									<input class="form" type="text" name="full-name" placeholder="John Doe">
+								</label>
+							</div>
+							<div class="payment-info-item">
+								<label class="label">
+									Email:<br>
+									<input class="form" type="text" name="email" placeholder="johndoe@email.com">
+								</label>
+							</div>
+						</div>
+					</div>
+					<div class="payment-form-item">
+						<label class="label">
+							Card Number:<br>
+							<input class="form" type="text" name="card-number" placeholder="XXXX-XXXX-XXXX-XXXX">
+						</label>
+					</div>
+					<div class="payment-form-item">
+						<div class="payment-info-container">
+							<div class="payment-info-item">
+								<label class="label">
+									Expiration Date:<br>
+									<input class="form" type="text" name="expiration-date" placeholder="MM/YY">
+								</label>
+							</div>
+							<div class="payment-info-item">
+								<label class="label">
+									Security Code:<br>
+									<input class="form" type="text" name="security-code" placeholder="###">
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="right-aligned-content">
+					<button class="button reset-button">Clear</button>
+					<button class="button submit-button">Pay</button>		
+				</div>
+			</section>
 	</main>
 	<footer class="footer">
 		<div class="footer-container">
-			<div class="footer-items">
-				<section>
-					<h4 class="footer-logotype">Milo.</h4>
-					<hr class="divider">
-					<nav>
-						<ul class="footer-items">
+			<div class="footer-item">
+				<section class="footer-section">
+					<h6 class="footer-heading footer-logo">Milo.</h4>
+						<hr class="divider">
+						<nav>
+							<ul class="footer-nav">
+								<li>
+									<a class="footer-nav-link" href="styleguide.html">Style Guide</a>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="styleguide.html#citations">Citations</a>
+								</li>
+								<li>
+									<a class="footer-nav-link" href="https://github.com/midhatkazmi/IAT-339-Project-2.git" target="_blank">Github Repository</a>
+								</li>
+							</ul>
+						</nav>
+				</section>
+			</div>
+			<div class="footer-item">
+				<section class="footer-section">
+					<h6 class="footer-heading">Contact Us</h4>
+						<hr class="divider">
+						<ul class="footer-nav">
 							<li>
-								<a href="index.html">Home</a>
+								<a class="footer-nav-link" href="mailto:info@milo.com">info@milo.com</a>
 							</li>
 							<li>
-								<a href="about.html">About</a>
+								<a class="footer-nav-link" href="tel:7787823111">778.782.3111</a>
 							</li>
 							<li>
-								<a href="shop.html">Shop</a>
-							</li>
-							<li>
-								<a href="contact.html">Contact</a>
+								<a class="footer-nav-link" href="https://goo.gl/maps/gzdJnL2RjP52" target="_blank">
+									8888 University Dr.<br>
+									Burnaby, BC V5A 1S6
+								</a>
 							</li>
 						</ul>
-					</nav>
 				</section>
 			</div>
-			<div class="footer-items">
-				<section>
-					<h4 class="footer-heading">Contact Us</h4>
-					<hr class="divider">
-					<ul class="footer-items">
-						<li>
-							<a href="mailto:info@milo.com">info@milo.com</a>
-						</li>
-						<li>
-							<a href="tel:7787823111">778.782.3111</a>
-						</li>
-						<li>
-							<a href="https://goo.gl/maps/KRPLXEwYt4h3" target="_blank">
-								8888 University Dr.<br>
-								Burnaby, BC V5A 1S6
-							</a>
-						</li>
-					</ul>
-				</section>
-			</div>
-			<div class="footer-items">
-				<section>
-					<h4 class="footer-heading">Stay Connected</h4>
-					<hr class="divider"><br>
-					<a href="#social-media">
-						<img class="social-media-icon" src="img/facebook.svg" alt="Facebook Icon Link">
-					</a>
-					<a href="#social-media">
-						<img class="social-media-icon" src="img/instagram.png" alt="Instagram Icon Link">
-					</a>
-					<a href="#social-media">
-						<img class="social-media-icon" src="img/twitter.svg" alt="Twitter Icon Link">
-					</a>
+			<div class="footer-item">
+				<section id="social-media" class="footer-section">
+					<h6 class="footer-heading">Stay Connected</h4>
+						<hr class="divider">
+						<br>
+						<a class="footer-nav-link" href="https://www.facebook.com/" target="_blank">
+							<img class="social-media-icon" src="img/logo-facebook.svg" alt="Facebook Page Link">
+						</a>
+						<a class="footer-nav-link" href="https://www.instagram.com/" target="_blank">
+							<img class="social-media-icon" src="img/logo-instagram.png" alt="Instagram Account Link">
+						</a>
+						<a class="footer-nav-link" href="https://twitter.com/" target="_blank">
+							<img class="social-media-icon" src="img/logo-twitter.svg" alt="Twitter Icon Link">
+						</a>
 				</section>
 			</div>
 		</div>

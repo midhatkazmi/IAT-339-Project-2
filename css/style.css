@@ -552,3 +552,13 @@ a {
 	font-size: 0.75rem;
 	font-weight: 500;
 }
+
+/*CHECKOUT PAGE STYLING*/
+
+.right-aligned-content {
+	text-align: right;
+}
+
+.condensed-body {
+	width: 50%;
+}
