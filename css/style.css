@@ -298,7 +298,7 @@ select{
 /*change*/
 @media (max-width: 750px) {
 	.payment-method-icon {
-		width: 3rem;
+		width: 2rem;
 	}
 }
 
