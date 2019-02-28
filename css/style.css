@@ -295,6 +295,13 @@ select{
 	width: 4rem;
 }
 
+/*change*/
+@media (max-width: 750px) {
+	.payment-method-icon {
+		width: 3rem;
+	}
+}
+
 /*product*/
 .product-section{
 	display: flex;
@@ -706,6 +713,13 @@ select{
 
 .condensed-body {
 	width: 50%;
+}
+
+/*change*/
+@media (max-width: 750px) {
+	.condensed-body {
+		width: 100%;
+	}
 }
 
 /*<!-- SNACKBAR - Code for snackbar borrowed from https://www.w3schools.com/howto/howto_js_snackbar.asp-->*/
